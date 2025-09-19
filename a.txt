@@ -1,2 +1,39 @@
-sdsadasdsfdsfsd
-New file A content
+Amending commits
+
+Resetting commits (soft and hard)
+
+Squashing multiple commits into one
+
+The difference between revert (public) and reset (private)
+
+The collaborative workflow of merging and pulling
+
+That's a massive amount to cover, and you did great.
+
+## Your Git "Cheat Sheet"
+Think of it this way: you don't need to remember everything, you just need to remember the basics and know where to look for the rest. Here are the most important commands we've covered. You can refer back to this anytime.
+
+Everyday Workflow
+git status: Your best friend. Always run this to see what's going on.
+
+git log --oneline: Quickly see your recent commit history.
+
+git checkout -b <branch-name>: Create a new branch to work on.
+
+git add .: Stage all your changes.
+
+git commit -m "Your message": Save your work.
+
+git pull: Get the latest changes from the remote before you start work.
+
+git push -u origin <branch-name>: Push a new branch for the first time.
+
+Cleaning Up Your Local Work (Before Pushing)
+git commit --amend: Fix the message or add files to your very last commit.
+
+git reset HEAD~1: Undo the last commit.
+
+git rebase -i HEAD~N: Squash the last N commits together.
+
+Fixing a Mistake (After Pushing)
+git revert HEAD: Safely undo the last public commit.
